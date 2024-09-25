@@ -46,7 +46,7 @@ class DynamicArray():
   def __resize(self):
     self.__capacity *= 2
 
-    new_list = __make_array(self.__capacity)
+    new_list = self.__make_array(self.__capacity)
 
     for i in range(self.__n):
       new_list[i] = self.__A[i]
